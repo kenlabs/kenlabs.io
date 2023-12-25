@@ -1,29 +1,30 @@
-
 <!DOCTYPE html>
     <html lang="en">
 
     <head>
         <meta charset="utf-8" />
-        <title>KEN Labs - Open-source R&D lab with Web3 focus</title>
+        <title>Building the bedrock for Web3</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Building a New Economy: Data, AI, and Web3" />
-        <meta name="keywords" content="web3, data infra, content addressable, data ownership, data sovereignty" />
+        <meta name="description" content="KEN Labs provides best-in-class engineering, consulting, and auditing services for web3 & crypto." />
+        <meta name="keywords" content="Web3,Crypto,Bedrock" />
         <meta name="author" content="kenlabs" />
-        <meta name="email" content="info@kenlabs.org" />
-        <meta name="website" content="https://kenlabs.org" />
-        <meta name="Version" content="v0.0.1" />
+        <meta name="email" content="info@kenlabs.io" />
+        <meta name="website" content="https://kenlabs.io" />
+        <meta name="Version" content="v4.0.0" />
         <!-- favicon -->
         <link rel="shortcut icon" href="images/favicon.ico">
         <!-- Bootstrap -->
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <!-- tobii css -->
         <link href="css/tobii.min.css" rel="stylesheet" type="text/css" />
+        <!-- Slider -->
+        <link rel="stylesheet" href="css/tiny-slider.css"/>
         <!-- Icons -->
         <link href="css/materialdesignicons.min.css" rel="stylesheet" type="text/css" />
         <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
         <!-- Main Css -->
         <link href="css/style.css" rel="stylesheet" type="text/css" id="theme-opt" />
-        <link href="css/colors/default.css" rel="stylesheet" id="color-opt">
+        <link href="css/colors/skobleoff.css" rel="stylesheet" id="color-opt">
 
     </head>
 
@@ -43,7 +44,7 @@
         <header id="topnav" class="defaultscroll sticky">
             <div class="container">
                 <!-- Logo container-->
-                <a class="logo" href="index.html">
+                <a class="logo" href="index-bak.html">
                     <img src="images/kenlabs/kenlabs-english-dark.png" height="40" class="logo-light-mode" alt="">
                     <img src="images/kenlabs/kenlabs-english-light.png" height="40" class="logo-dark-mode" alt="">
                 </a>
@@ -65,413 +66,259 @@
                     </div>
                 </div>
 
-                <!--Slack & GitHub button Start-->
+                <!--Login button Start-->
                 <ul class="buy-button list-inline mb-0">
                     <li class="list-inline-item mb-0">
-                        <a href="https://join.slack.com/t/kenlabs/shared_invite/zt-1mhy7dgf5-YzBWqxXmlolqUjXGq07FJg" target="_blank">
-                            <div class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="slack" class="fea icon-sm"></i></div>
+                        <a href="https://github.com/kenlabs" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <div class="btn btn-icon btn-pills btn-soft-primary"><i data-feather="github" class="fea icon-sm"></i></div>
                         </a>
                     </li>
-
+                    
                     <li class="list-inline-item ps-1 mb-0">
-                        <a href="https://github.com/kenlabs" target="_blank" class="feather-github">
-                            <div class="btn btn-icon btn-pills btn-primary"><i data-feather="github" class="fea icon-sm"></i></div>
+                        <a href="https://blog.kenlabs.io" target="_blank">
+                            <div class="btn btn-icon btn-pills btn-primary"><i data-feather="book-open" class="fea icon-sm"></i></div>
                         </a>
                     </li>
                 </ul>
-                <!--Slack & GitHub button End-->
+                <!--Login button End-->
         
                 <div id="navigation">
                     <!-- Navigation Menu-->   
                     <ul class="navigation-menu">
-                        <li><a href="#kenlabs" class="sub-menu-item">Home</a></li>
-
-                        <li><a href="#portifilo" class="sub-menu-item">Portfolio</a></li>
-
-                        <li><a href="#contact" class="sub-menu-item">Contact us</a></li>
-
+                        <li><a href="index-bak.html" class="sub-menu-item">Home</a></li>
+                        <li><a href="#services" class="sub-menu-item">Services</a></li>
+                        <li><a href="#whoweare" class="sub-menu-item">Who We Are</a></li>
+                        <li><a href="#contact" class="sub-menu-item">Contact</a></li>
                     </ul><!--end navigation menu-->
                 </div><!--end navigation-->
             </div><!--end container-->
         </header><!--end header-->
         <!-- Navbar End -->
-        
-        <!-- Start -->
-        <section id="kenlabs" class="bg-half">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-10">
-                        <div class="pages-heading">
-                            <h4 class="title mb-0">We Are KEN Labs. <br>Building a New Economy: Data, AI, and Web3.</h4>
 
-                        </div>
-                        <div class="mt-3">
-                            <a href="https://github.com/kenlabs/organization/blob/main/kenlabs-protocol/PROTOCOL.md" target="_blank" class="btn btn-primary me-2 mt-2">KEN Labs Protocol <span class="badge rounded-pill bg-danger ms-2">v0.1</span></a>
-                            <a href="https://github.com/datadaostack" target="_blank" class="btn btn-soft-primary mt-2">DataDAO stack</a>
-                            <p class="mt-3 mb-0 text-muted">*DataDAOstack is an open source data-first stack advancing the technology and adoption of decentralized data operating system: KENOS.</p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-
+        <!-- All Start -->
+        <section class="bg-half-100 d-table w-100">
             <div class="container mt-100 mt-60">
-                <div id="grid" class="row mt-5">
-                    <div class="col-md-3 col-4 spacing picture-item">
-                        <div class="card border-0 position-relative d-block shadow overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <img src="images/kenlabs/about/1.jpeg" class="img-fluid" alt="work-image">
+                <div class="row mt-5 align-items-center">
+                    <div class="col-lg-6 col-md-7">
+                        <div class="title-heading me-lg-4">
+                            <h1 class="h2 mb-3">Building the <span class="text-primary">Bedrock</span> for Web3</h1>
+                            <p class="para-desc text-muted"> KEN Labs provides best-in-class engineering, consulting, and transition to Web3.</p>
+                            <div class="mt-4">
+                                <a href="#services" class="btn btn-primary mt-2 me-2"> Explore Our Services</a>
                             </div>
                         </div>
                     </div><!--end col-->
 
-                    <div class="col-md-3 col-4 spacing picture-item">
-                        <div class="card border-0 position-relative d-block shadow overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <img src="images/kenlabs/about/6.jpeg" class="img-fluid" alt="work-image">
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-md-3 col-4 spacing picture-item">
-                        <div class="card border-0 position-relative d-block shadow overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <img src="images/kenlabs/about/7.jpeg" class="img-fluid" alt="work-image">
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-md-3 col-4 spacing picture-item">
-                        <div class="card border-0 position-relative d-block shadow overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <img src="images/kenlabs/about/4.jpeg" class="img-fluid" alt="work-image">
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-md-3 col-4 spacing picture-item">
-                        <div class="card border-0 position-relative d-block shadow overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <img src="images/kenlabs/about/3.jpeg" class="img-fluid" alt="work-image">
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-md-3 col-4 spacing picture-item">
-                        <div class="card border-0 position-relative d-block shadow overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <img src="images/kenlabs/about/8.jpeg" class="img-fluid" alt="work-image">
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-md-3 col-4 spacing picture-item">
-                        <div class="card border-0 position-relative d-block shadow overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <img src="images/kenlabs/about/5.jpeg" class="img-fluid" alt="work-image">
-                            </div>
-                        </div>
-                    </div><!--end col-->
-
-                    <div class="col-md-3 col-4 spacing picture-item">
-                        <div class="card border-0 position-relative d-block shadow overflow-hidden rounded">
-                            <div class="card-body p-0">
-                                <img src="images/kenlabs/about/2.jpeg" class="img-fluid" alt="work-image">
-                            </div>
-                        </div>
+                    <div class="col-lg-6 col-md-5 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <img src="images/kenlabs/web3-infra.jpg" width="100%" alt="">
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
 
-            <div id="portifilo" class="container mt-100 mt-60">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
-                        <div class="section-title mb-4 pb-2">
-                            <h4 class="title mb-4">What We Do?</h4>
-                            <p class="text-muted para-desc mx-auto mb-0">Start working with <span class="text-primary fw-bold">KEN Labs</span> that can provide everything you need to build Web3 data economy.</p>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-
-                <div class="row">
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <a href="https://jiaozidb.com" target="_blank">
-                            <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow">
-                                <img src="images/kenlabs/portifilo/jiaozidb.png" class="avatar avatar-ex-sm" alt="">
-                                <div class="flex-1 ms-3">
-                                    <h4 class="title mb-0 text-dark">JiaoziDB</h4>
-                                    <p class="text-muted mb-0">IPLD Database</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <a href="https://pando.network" target="_blank">
-                            <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow">
-                                <img src="images/kenlabs/portifilo/pando.png" class="avatar avatar-ex-sm" alt="">
-                                <div class="flex-1 ms-3">
-                                    <h4 class="title mb-0 text-dark">Pando</h4>
-                                    <p class="text-muted mb-0">Web3 Reputation Data Network</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <a href="https://kencloud.com" target="_blank">
-                            <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow">
-                                <img src="images/kenlabs/portifilo/abacus.png" class="avatar avatar-ex-sm" alt="">
-                                <div class="flex-1 ms-3">
-                                    <h4 class="title mb-0 text-dark">Abacus</h4>
-                                    <p class="text-muted mb-0">Computation over IPLD</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <a href="https://cid.contact/" target="_blank">
-                            <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow">
-                                <img src="images/kenlabs/portifilo/ipni.png" class="avatar avatar-ex-sm" alt="">
-                                <div class="flex-1 ms-3">
-                                    <h4 class="title mb-0 text-dark">Partner of IPNI</h4>
-                                    <p class="text-muted mb-0">InterPlanetary Network Indexer</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <a href="https://www.cod.cloud/" target="_blank">
-                            <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow">
-                                <img src="images/kenlabs/portifilo/cod.png" class="avatar avatar-ex-sm" alt="">
-                                <div class="flex-1 ms-3">
-                                    <h4 class="title mb-0 text-dark">Member of CoD</h4>
-                                    <p class="text-muted mb-0">Compute over Data Working Group</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <a href="https://retrieval.market/" target="_blank">
-                            <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow">
-                                <img src="images/kenlabs/portifilo/retrievalmarket.png" class="avatar avatar-ex-sm" alt="">
-                                <div class="flex-1 ms-3">
-                                    <h4 class="title mb-0 text-dark">Member of RM</h4>
-                                    <p class="text-muted mb-0">Retrieval Market Working Group</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <a href="https://orbitcommunity.filecoin.io/" target="_blank">
-                            <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow">
-                                <img src="images/kenlabs/portifilo/orbit.png" class="avatar avatar-ex-sm" alt="">
-                                <div class="flex-1 ms-3">
-                                    <h4 class="title mb-0 text-dark">Member of Orbit Community</h4>
-                                    <p class="text-muted mb-0">Dive into the Filecoin ecosystem</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <a href="https://web3datainfra.club/" target="_blank">
-                            <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow">
-                                <img src="images/kenlabs/portifilo/w3di.png" class="avatar avatar-ex-sm" alt="">
-                                <div class="flex-1 ms-3">
-                                    <h4 class="title mb-0 text-dark">Member of W3DI Club</h4>
-                                    <p class="text-muted mb-0">Dive into the data infra ecosystem</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <a href="https://drand.love/" target="_blank">
-                            <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow">
-                                <img src="images/kenlabs/portifilo/loe.png" class="avatar avatar-ex-sm" alt="">
-                                <div class="flex-1 ms-3">
-                                    <h4 class="title mb-0 text-dark">Member of LoE</h4>
-                                    <p class="text-muted mb-0">League of Entropy</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <a href="https://kencloud.com/educate.html" target="_blank">
-                            <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow">
-                                <img src="images/kenlabs/portifilo/e.png" class="avatar avatar-ex-sm" alt="">
-                                <div class="flex-1 ms-3">
-                                    <h4 class="title mb-0 text-dark">KEN Labs Education</h4>
-                                    <p class="text-muted mb-0">Educating the next generation.</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <a href="https://docs.google.com/document/d/1KXVm1tIldSe2hQCQl-Axi1JIae-PXbdGhKkMHKowtns/edit" target="_blank">
-                            <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow">
-                                <img src="images/job/Appdynamics.svg" class="avatar avatar-ex-sm" alt="">
-                                <div class="flex-1 ms-3">
-                                    <h4 class="title mb-0 text-dark">KEN Labs Hackathon</h4>
-                                    <p class="text-muted mb-0">Let us Buidl!</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!--end col-->
-
-                    <div class="col-lg-4 col-md-6 col-12 mt-4 pt-2">
-                        <a href="https://mvschool.dev" target="_blank">
-                            <div class="d-flex features feature-primary key-feature align-items-center p-3 rounded shadow">
-                                <img src="images/job/Gradle.svg" class="avatar avatar-ex-sm" alt="">
-                                <div class="flex-1 ms-3">
-                                    <h4 class="title mb-0 text-dark">Metaverse School</h4>
-                                    <p class="text-muted mb-0">A collective of metaverse technology</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div><!--end col-->
-
-                    <div class="col-12 mt-4 pt-2 text-center">
-                        <!--a href="javascript:void(0)" class="btn btn-primary">See More <i class="mdi mdi-arrow-right"></i></a-->
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-
-            <div id="contact" class="container mt-100 mt-60">
-                <div class="row justify-content-center">
-                    <div class="col-12 text-center">
+            <div class="container mt-100 mt-60" id="whoweare">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
                         <div class="section-title">
-                            <h4 class="title mb-4">Get In Touch!</h4>
-                            <p class="text-muted para-desc mx-auto">We would love to hear from you. We can be contacted 24/7 on the email addresses or WeChat ID below We aim to respond to all communications as soon.</p>
-                            <br>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="card border-0 text-center features feature-primary feature-clean">
-                            <div class="icons text-center mx-auto">
-                                <i class="uil uil-phone d-block rounded h3 mb-0"></i>
-                            </div>
-                            <div class="content mt-4">
-                                <h5 class="fw-bold">WeChat</h5>
-                                <p class="text-muted">You can reach out to us at WeChat.<br></p>
-                                <br>
-                                <a href="wechat:data-lake" class="read-more">data-lake</a>
-                            </div>
+                            <h4 class="title">About Us</h4>
+                            <h6 class="text-primary mb-4">Unlock your Potential with KEN Labs Products</h6>
+                            <p class="text-muted mb-0">KEN Labs is a leading blockchain R&D firm, specializing in Protocol implementation, Technical design advisory, Crypto-economics consulting and Prototyping.<br><br>Our team is made up of engineers who have been in distributed system in 2007 and have been in Web3/Crypto/Blockchain/IPFS since 2016.</p>
                         </div>
                     </div><!--end col-->
 
-                    <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="card border-0 text-center features feature-primary feature-clean">
-                            <div class="icons text-center mx-auto">
-                                <i class="uil uil-envelope d-block rounded h3 mb-0"></i>
-                            </div>
-                            <div class="content mt-4">
-                                <h5 class="fw-bold">Email</h5>
-                                <p class="text-muted">You can reach out to us on Email.</p>
-                                <br>
-                                <a href="mailto:info@kenlabs.org" class="read-more">info@kenlabs.org</a>
-                            </div>
+                    <div class="col-md-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                        <div class="ms-md-4">
+                            <div class="progress-box">
+                                <h6 class="title text-muted">Blockchain/Distributed System</h6>
+                                <div class="progress">
+                                    <div class="progress-bar position-relative bg-primary" style="width:84%;">
+                                        <div class="progress-value d-block text-muted h6">84%</div>
+                                    </div>
+                                </div>
+                            </div><!--end process box-->
+                            <div class="progress-box mt-4">
+                                <h6 class="title text-muted">IPFS/Filecoin/Content Addressable Data</h6>
+                                <div class="progress">
+                                    <div class="progress-bar position-relative bg-primary" style="width:75%;">
+                                        <div class="progress-value d-block text-muted h6">75%</div>
+                                    </div>
+                                </div>
+                            </div><!--end process box-->
+                            <div class="progress-box mt-4">
+                                <h6 class="title text-muted">Web3/Ethereum/ZK</h6>
+                                <div class="progress">
+                                    <div class="progress-bar position-relative bg-primary" style="width:79%;">
+                                        <div class="progress-value d-block text-muted h6">79%</div>
+                                    </div>
+                                </div>
+                            </div><!--end process box-->
+                            <div class="progress-box mt-4">
+                                <h6 class="title text-muted">GoLang/Rust</h6>
+                                <div class="progress">
+                                    <div class="progress-bar position-relative bg-primary" style="width:95%;">
+                                        <div class="progress-value d-block text-muted h6">95%</div>
+                                    </div>
+                                </div>
+                            </div><!--end process box-->
+                            <div class="progress-box mt-4">
+                                <h6 class="title text-muted">AI/ML/BigData</h6>
+                                <div class="progress">
+                                    <div class="progress-bar position-relative bg-primary" style="width:93%;">
+                                        <div class="progress-value d-block text-muted h6">93%</div>
+                                    </div>
+                                </div>
+                            </div><!--end process box-->
                         </div>
-                    </div><!--end col-->
-
-                    <div class="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                        <div class="card border-0 text-center features feature-primary feature-clean">
-                            <div class="icons text-center mx-auto">
-                                <i class="uil uil-map-marker d-block rounded h3 mb-0"></i>
-                            </div>
-                            <div class="content mt-4">
-                                <h5 class="fw-bold">Location</h5>
-                                <p class="text-muted">Blockchain Building, No. 1677, North Tianfu Avenue, High-tech Zone, Chengdu</p>
-                                <a href="https://www.google.com/maps/place/30%C2%B034'41.0%22N+104%C2%B004'12.0%22E/@30.5781736,104.068813,17.55z" target="_blank" data-type="iframe" class="video-play-icon read-more lightbox">View on Google map</a>
-                            </div>
-                        </div>
-                    </div><!--end col-->
-                </div><!--end row-->
-            </div><!--end container-->
-        </section><!--end section-->
-        <!-- End -->
-
-        <section class="py-md-4 py-5 bg-primary">
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col-lg-6 col-md-6 col-12 text-center text-md-start">
-                        <h4 class="text-white title-dark mb-0">Release KEN labs Protocol v0.1!</h4>
-                    </div><!--end col-->
-                    <div class="col-lg-3 col-md-3 col-12 mt-4 mt-sm-0 text-center">
-                        <div class="d-flex justify-content-center">
-                        </div>
-                    </div><!--end col-->
-                    <div class="col-lg-3 col-md-3 col-12 mt-4 mt-sm-0 text-center text-md-end">
-                        <a href="https://github.com/kenlabs/organization/blob/main/kenlabs-protocol/PROTOCOL.md" target="_blank" class="btn btn-warning">Get Started</a>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
-        </section><!--end section-->
-        <!-- End -->
-
-        <!-- Footer Start -->
-        <footer class="footer">
-            <div class="container">
+            <div class="container mt-100 mt-60" id="services">
                 <div class="row">
                     <div class="col-12">
-                        <div class="footer-py-60 footer-border">
-                            <div class="row">
-                                <div class="col-lg-4 col-12 mb-0 mb-md-4 pb-0 pb-md-2">
-                                    <a href="#" class="logo-footer">
-                                        <img src="images/kenlabs/kenlabs-english-light.png" height="50" alt="">
-                                    </a>
-                                    <p class="mt-4">Building a New Economy: Data, AI, and Web3.</p>
-                                    <ul class="list-unstyled social-icon foot-social-icon mb-0 mt-4">
-                                        <li class="list-inline-item"><a href="https://join.slack.com/t/kenlabs/shared_invite/zt-1mhy7dgf5-YzBWqxXmlolqUjXGq07FJg" target="_blank" class="rounded"><i data-feather="slack" class="fea icon-sm fea-social"></i></a></li>
-                                        <li class="list-inline-item"><a href="https://github.com/kenlabs" target="_blank" class="rounded"><i data-feather="github" class="fea icon-sm fea-social"></i></a></li>
-                                        <li class="list-inline-item"><a href="https://twitter.com/KenLabs_Web3" target="_blank" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
-                                        <li class="list-inline-item"><a href="#contact" class="rounded"><i data-feather="message-circle" class="fea icon-sm fea-social"></i></a></li>
-                                    </ul><!--end icon-->
-                                </div><!--end col-->
+                        <div class="section-title mb-4 pb-2">
+                            <h4 class="title mb-4">Services We Provide</h4>
+                            <p class="text-muted para-desc mb-0">We help you build Web3 projects that <span class="text-primary fw-bold">create long term value</span> for your customers, community, and brand.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
 
-                                <div class="col-lg-2 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                                    <h5 class="footer-head">Company</h5>
-                                    <ul class="list-unstyled footer-list mt-4">
-                                        <li><a href="#kenlabs" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> About us</a></li>
-                                        <li><a href="#portifilo" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Portfolio</a></li>
-                                        <li><a href="#contact" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Contact us</a></li>
-                                    </ul>
-                                </div><!--end col-->
+                <div class="row align-items-center">
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow">
+                            <div class="icons text-center">
+                                <i class="uil uil-layer-group d-block rounded h3 mb-0"></i>
+                            </div>
+                            <div class="card-body p-0 mt-4">
+                                <h1 class="title h5 text-dark">Software Development</h1>
+                                <p class="text-muted mt-2">Need a DAPP, Smart Contracts or Data Economy Infrastructure built?</p>
+                                <i class="uil uil-layer-group full-img"></i>
+                            </div>
+                        </div>
+                    </div><!--end col-->
 
-                                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                                    <h5 class="footer-head">Products</h5>
-                                    <ul class="list-unstyled footer-list mt-4">
-                                        <li><a href="https://jiaozidb.com" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> JiaoziDB</a></li>
-                                        <li><a href="https://pando.network" target="_blank" class="text-foot"><i class="uil uil-angle-right-b me-1"></i> Pando Project</a></li>
-                                    </ul>
-                                </div><!--end col-->
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow">
+                            <div class="icons text-center">
+                                <i class="uil uil-airplay d-block rounded h3 mb-0"></i>
+                            </div>
+                            <div class="card-body p-0 mt-4">
+                                <h1 class="title h5 text-dark">Advisory</h1>
+                                <p class="text-muted mt-2">Transform your business with a deep understanding of Blockchain and Web3.</p>
+                                <i class="uil uil-airplay full-img"></i>
+                            </div>
+                        </div>
+                    </div><!--end col-->
 
-                                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-sm-0 pt-2 pt-sm-0">
-                                    <h5 class="footer-head">Newsletter</h5>
-                                    <p class="mt-4">Subscribe to KEN Labs Wechat official account to keep updated.</p>
-                                    <img src="images/kenlabs/kenlabs-wechat.jpg" class="avatar avatar-medium mt-4" alt="">
-                                </div><!--end col-->
-                            </div><!--end row-->
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow">
+                            <div class="icons text-center">
+                                <i class="uil uil-focus-target d-block rounded h3 mb-0"></i>
+                            </div>
+                            <div class="card-body p-0 mt-4">
+                                <h1 class="title h5 text-dark">Web3 Education</h1>
+                                <p class="text-muted mt-2">It can be daunting to make a transition to web3, Every Web3 journey needs a guide.</p>
+                                <i class="uil uil-focus-target full-img"></i>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+
+                    <div class="col-lg-3 col-md-6 mt-4 pt-2">
+                        <div class="card border-0 features feature-primary feature-clean course-feature p-4 overflow-hidden shadow">
+                            <div class="icons text-center">
+                                <i class="uil uil-expand-arrows d-block rounded h3 mb-0"></i>
+                            </div>
+                            <div class="card-body p-0 mt-4">
+                                <h1 class="title h5 text-dark">Strategy</h1>
+                                <p class="text-muted mt-2">Need an outside perspective to get your business to the next level?</p>
+                                <i class="uil uil-expand-arrows full-img"></i>
+                            </div>
                         </div>
                     </div><!--end col-->
                 </div><!--end row-->
             </div><!--end container-->
 
-            <div class="footer-py-30 footer-bar">
+            <div class="container mt-100 mt-60" id="contact">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="section-title mb-4 pb-2">
+                            <h4 class="title mb-4">GET IN TOUCH!</h4>
+                            <p class="text-muted para-desc mb-0">Have a project you would like to discuss with us? Our team will get back to you within 48 hours.</p>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+
+                <div class="row align-items-center">
+                    <div class="col-lg-5 col-md-6 mt-4 pt-2 order-2 order-md-1">
+                        <img src="images/05.jpg" class="card-img-top rounded-top" alt="...">
+                    </div><!--end col-->
+
+                    <div class="col-lg-7 col-md-6 mt-4 pt-2 order-1 order-md-2">
+                        <div class="title-heading ms-lg-4">
+                            <h4 class="mb-4" data-aos="fade-up" data-aos-duration="1000">Contact Details</h4>
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body p-0">
+                                    <div class="contact-detail d-flex align-items-center mt-3" data-aos="fade-up" data-aos-duration="1200">
+                                        <div class="icon">
+                                            <i data-feather="mail" class="fea icon-m-md text-dark me-3"></i>
+                                        </div>
+                                        <div class="content overflow-hidden d-block">
+                                            <h6 class="fw-bold mb-0">Email</h6>
+                                            <a href="mailto:info@kenlabs.io" class="text-primary">info@kenlabs.io</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body p-0">
+                                    <div class="contact-detail d-flex align-items-center mt-3" data-aos="fade-up" data-aos-duration="1400">
+                                        <div class="icon">
+                                            <i data-feather="phone" class="fea icon-m-md text-dark me-3"></i>
+                                        </div>
+                                        <div class="content overflow-hidden d-block">
+                                            <h6 class="fw-bold mb-0">Phone</h6>
+                                            <a href="tel:+86 18602893015" class="text-primary">+86 18602893015</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card border-0 bg-transparent">
+                                <div class="card-body p-0">
+                                    <div class="contact-detail d-flex align-items-center mt-3" data-aos="fade-up" data-aos-duration="1600">
+                                        <div class="icon">
+                                            <i data-feather="map-pin" class="fea icon-m-md text-dark me-3"></i>
+                                        </div>
+                                        <div class="content overflow-hidden d-block">
+                                            <h6 class="fw-bold mb-0">Location</h6>
+                                            <a>Blockchain Building, No. 1677, North Tianfu Avenue, High-tech Zone, Chengdu</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!--end col-->
+                </div><!--end row-->
+            </div><!--end contact-->
+        </section>
+        <!-- All END -->
+
+        <!-- Footer Start -->
+        <footer class="footer footer-bar">
+            <div class="footer-py-30">
                 <div class="container text-center">
                     <div class="row align-items-center">
                         <div class="col-sm-6">
                             <div class="text-sm-start">
-                                <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> kenlabs.org, Design with <i class="mdi mdi-heart text-danger"></i> by <a href="https://kenlabs.org" target="_blank" class="text-reset">KEN Labs</a>.</p>
+                                <p class="mb-0">© <script>document.write(new Date().getFullYear())</script> KEN Labs. Design with <i class="mdi mdi-heart text-danger"></i> by <a href="https://kenlabs.io" target="_blank" class="text-reset">KEN Labs</a>.</p>
                             </div>
+                        </div>
+    
+                        <div class="col-sm-6 mt-4 mt-sm-0 pt-2 pt-sm-0">
+                            <ul class="list-unstyled social-icon foot-social-icon text-sm-end mb-0">
+
+                                <li class="list-inline-item mb-0"><a href="https://twitter.com/KenLabs_Web3" target="_blank" class="rounded"><i data-feather="twitter" class="fea icon-sm fea-social"></i></a></li>
+                                <li class="list-inline-item mb-0"><a href="https://www.linkedin.com/company/kenlabs" target="_blank" class="rounded"><i data-feather="linkedin" class="fea icon-sm fea-social"></i></a></li>
+                            </ul><!--end icon-->
                         </div><!--end col-->
                     </div><!--end row-->
                 </div><!--end container-->
@@ -481,12 +328,16 @@
 
         <!-- Back to top -->
         <a href="#" onclick="topFunction()" id="back-to-top" class="back-to-top fs-5"><i data-feather="arrow-up" class="fea icon-sm icons align-middle"></i></a>
+        <!-- Back to top -->
 
         <!-- javascript -->
         <script src="js/bootstrap.bundle.min.js"></script>
-        <!-- shuffle and tobii js -->
-        <script src="js/shuffle.min.js"></script>
+        <!-- tobii js -->
         <script src="js/tobii.min.js"></script>
+        <!-- SLIDER -->
+        <script src="js/tiny-slider.js "></script>
+        <!-- Contact -->
+        <script src="js/contact.js "></script>
         <!-- Icons -->
         <script src="js/feather.min.js"></script>
         <!-- Main Js -->
