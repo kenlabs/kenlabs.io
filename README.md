@@ -1,1 +1,1 @@
-kenlabs.io
+kenlabs
