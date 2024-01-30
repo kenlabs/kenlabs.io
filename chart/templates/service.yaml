@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: kenlabs-io-service
+  labels:
+    apptype: kenlabs-io
+spec:
+  type: ClusterIP
+  selector:
+    app: kenlabs-io
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
